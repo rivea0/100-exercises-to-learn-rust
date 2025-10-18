@@ -2,7 +2,7 @@
 //  to get the code to compile.
 
 pub fn summary(ticket: Ticket) -> (Ticket, Summary) {
-    (ticket, ticket.summary())
+    (ticket.clone(), ticket.summary())
 }
 
 pub struct Ticket {
